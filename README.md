@@ -2,12 +2,7 @@
 ### A webscraper for [holderscan](https://holderscan.com) that provides real-time updates on holder changes for tokens on-chain
 Note: The script has minimal support for EVM tokens for now, works mainly for SOL.
 
-<<<<<<< HEAD
-<img src="image1.png" width="65%"/>
-<img src="image2.PNG" width="34%"/>
-=======
 <img src="image.png" width="99%" style="display: inline-block;"/>
->>>>>>> 97cb288 (tweaking READM.me)
 
 ## prerequisite
 * Firefox
