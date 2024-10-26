@@ -1,10 +1,10 @@
 # HolderScrape
 ### A webscraper for [holderscan](https://holderscan.com) that provides real-time updates on holder changes for tokens on-chain
-Note: The script has minimal support for EVM tokens for now, works mainly for SOL.
+Note: Currently optimized for SOL compatability, more EVM support soon!
 
 <img src="image.png" width="99%" style="display: inline-block;"/>
 
-## prerequisite
+## Requirements
 * Firefox
   * currently this script only works with Firefox.
 * Mozilla geckodriver
@@ -13,14 +13,18 @@ Note: The script has minimal support for EVM tokens for now, works mainly for SO
 * Discord webhook
   * this is where you will receive your holder change updates
 
-## installation & setup
+## Installation & setup
 ```
 git clone https://github.com/contractaddress/holderscrape.git 
+```
+```
 cd holderscrape/
 ```
 ###### Virtual environment
 ```
 python3 -m venv .venv
+```
+```
 source .venv/bin/activate
 ```
 ###### Install necessary dependencies
@@ -29,13 +33,16 @@ pip install -r requirements.txt
 ```
 ###### Setup your discord webhook
 inside holderscrape(dot)py edit line 19 variable to your discord webhook   
-`webhook_url = os.getenv('DISCWEBHK')` e.g. `webhook_url = 'your_webhook'`  
+`webhook_url = os.getenv('DISCWEBHK')` e.g. `webhook_url = 'your_webhook'`
+
 or just add it as an environment variable to your shell file  
 `export DISCWEBHK='your_discord_webhook_here'`
 
 ##### Launch script
 ```
 cd src/
+```
+```
 python3 holderscrape.python3
 ```
 ## Usage
